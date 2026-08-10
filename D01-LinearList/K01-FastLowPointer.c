@@ -34,20 +34,21 @@ int findNodeWithFastLow(Node* head, int k) {
 
 // Q01 第 2 题
 Node* findIntersectionNodeWithFastLow(Node* headA, Node* headB) {
-    if (headA == NULL || headB == NULL) return NULL;
 
-    Node *p = headA;
+    if (headA == NULL || headB == NULL) return NULL;
 
     int lenA = 0;
     int lenB = 0;
 
     // 遍历链表A，获取其长度
+    Node *p = headA;
     while (p != NULL) {
         lenA++;
         p = p->next;
     }
 
     // 遍历链表B，获取其长度
+    p = headB;
     while (p != NULL) {
         lenB++;
         p = p->next;

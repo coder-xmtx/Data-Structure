@@ -7,5 +7,5 @@
 - `D` Directory 目录
 - `C` Code 代码与具体知识点
 - `N` Note 笔记
-- `Q` Question 题目
 - `K` Knowledge 其他知识
+- - `Question` 题目
