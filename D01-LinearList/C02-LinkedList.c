@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef int ElementType;
+typedef int ElemType;
 
 typedef struct Node {
-    ElementType data;
+    ElemType data;
     struct Node *next;
 } Node;
 
@@ -19,7 +19,7 @@ Node* initNode() {
 
 // 单链表 - 头插法，每次插入数据都插在头节点的后面
 // 头插法的顺序和排列是相反的
-void insertHead(Node *head, ElementType x) {
+void insertHead(Node *head, ElemType x) {
     Node *newNode = (Node *)malloc(sizeof(Node));
     newNode->data = x;
     newNode->next = head->next;
@@ -46,7 +46,7 @@ Node* getTail(Node *head) {
 }
 
 // 单链表 - 尾插法
-Node* insertTail(Node *tail, ElementType x) {
+Node* insertTail(Node *tail, ElemType x) {
     Node *newNode = (Node *) malloc(sizeof(Node));
     newNode->data = x;
     newNode->next = NULL;
@@ -55,7 +55,7 @@ Node* insertTail(Node *tail, ElementType x) {
 }
 
 // 单链表 - 在指定位置插入
-void insertPosition(Node *head, ElementType x, const int pos) {
+void insertPosition(Node *head, ElemType x, const int pos) {
     Node *p = head;
     int i = 0;
 
@@ -74,7 +74,7 @@ void insertPosition(Node *head, ElementType x, const int pos) {
 }
 
 // 单链表 - 删除节点
-void deleteNode(Node *head, ElementType x, const int pos) {
+void deleteNode(Node *head, ElemType x, const int pos) {
     Node *p = head;
     int i = 0;
 

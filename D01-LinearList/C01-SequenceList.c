@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 #define MAXSIZE 100
-typedef int ElementType;
+typedef int ElemType;
 
 typedef struct {
-    ElementType *data;
+    ElemType *data;
     int length;
 } SeqList;
 
@@ -17,13 +17,13 @@ typedef struct {
 // 初始化顺序表 - 使用动态内存
 SeqList *initList() {
     SeqList *list = (SeqList *) malloc(sizeof(SeqList));
-    list->data = (ElementType *) malloc(sizeof(ElementType) * MAXSIZE);
+    list->data = (ElemType *) malloc(sizeof(ElemType) * MAXSIZE);
     list->length = 0;
     return list;
 }
 
 // 在顺序表尾部添加元素
-int appendList(SeqList *L, const ElementType x) {
+int appendList(SeqList *L, const ElemType x) {
     if (L->length >= MAXSIZE) {
         printf("Error. The List is Overflow.\n");
         return 0;
@@ -43,7 +43,7 @@ void printList(const SeqList *L) {
 }
 
 // 在顺序表中插入元素（比如，在第 2 个位置插入元素，实际是在下标为 1 的位置插入）
-int insertList(SeqList *L, const ElementType x, const int position) {
+int insertList(SeqList *L, const ElemType x, const int position) {
     if (L->length >= MAXSIZE) {
         printf("Error. The List is Overflow.\n");
         return 0;
@@ -64,7 +64,7 @@ int insertList(SeqList *L, const ElementType x, const int position) {
 }
 
 // 删除元素（position依旧是实际位置不是下标，*x 用来查看被删除元素）
-int deleteList(SeqList *L, const int position, ElementType *x) {
+int deleteList(SeqList *L, const int position, ElemType *x) {
     if (L->length == 0) {
         printf("Error. The List is Empty.\n");
         return 0;
@@ -87,7 +87,7 @@ int deleteList(SeqList *L, const int position, ElementType *x) {
 }
 
 // 查找元素（用元素找第一次出现的位置）
-int searchList(SeqList *L, const ElementType x) {
+int searchList(SeqList *L, const ElemType x) {
     if (L->length == 0) {
         printf("Error. The List is Empty.\n");
     }
@@ -116,7 +116,7 @@ int main(void) {
     printList(List); // 遍历顺序表
 
     // 删除元素
-    ElementType delete_element;
+    ElemType delete_element;
     deleteList(List, 2, &delete_element);
     printList(List);
     printf("Delete: %d\n", delete_element);
