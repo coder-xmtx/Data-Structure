@@ -1,4 +1,4 @@
-// 单链表的创建
+// 单链表的定义与创建
 
 #include <stdio.h>
 #include <stdlib.h>
