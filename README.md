@@ -8,7 +8,7 @@
   - `D00` Algorithm 算法知识，持续更新
   - `D01` Linear List 线性表知识，包括顺序表和链表
   - `D03` Tree 树的相关知识
-- `L - C - P` Lesson - Code - Part 代码与具体知识点
+- `L - C/N - P` Lesson - Code/Note - Part 代码与具体知识点
 - `GDUT` 学校课程
 
 ## 使用 IDE
