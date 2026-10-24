@@ -6,8 +6,13 @@
 
 - `D` Directory 目录
   - `D00` Algorithm 算法知识，持续更新
-  - `D01` Linear List 线性表知识，包括顺序表和链表
-  - `D03` Tree 树的相关知识
+  - `D01` Linear List 线性表
+  - `D02` Stack and Queue 栈和队列
+  - `D03` String 串
+  - `D04` Tree 树
+  - `D05` Graph 图
+  - `D06` Search 查找
+  - `D07` Sorting 排序
 - `L - C/N - P` Lesson - Code/Note - Part 代码与具体知识点
 - `GDUT` 学校课程
 
