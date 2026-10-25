@@ -13,7 +13,7 @@
   - `D05` Graph 图
   - `D06` Search 查找
   - `D07` Sorting 排序
-- `L - C/N - P` Lesson - Code/Note - Part 代码与具体知识点
+- `L - C/N` Lesson - Code/Note 代码与具体知识点
 - `GDUT` 学校课程
 
 ## 使用 IDE

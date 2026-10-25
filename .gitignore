@@ -1,4 +1,9 @@
+# exe 输出文件
 output
+
+# 绘图文件
 drawio
+
+# IDE 和 CMAKE 配置文件
 .idea
 cmake-build-debug
