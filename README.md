@@ -1,4 +1,4 @@
-# <img src="assets/data-structure-icon.svg"> Data Structure
+# <img src="assets/icon.svg"> Data Structure
 
 学习数据结构基础知识，掌握基本思想及代码编写能力
 
